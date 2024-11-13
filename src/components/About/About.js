@@ -2,7 +2,7 @@ import Button from "../ui/Button";
 
 const About = () => {
   return (
-    <section className="flex mx-auto">
+    <section id="About" className="flex mx-auto">
       <div className="container custom-container">
         <div className="grid gap-[14px] text-sm mb-10 grid-cols-2 md:grid-cols-4 lg:grid-cols-6">
           <p className="col-span-2 row-start-1 md:col-span-3 md:row-start-1 lg:col-span-3 lg:row-start-1 text-2xl md:text-[32px] mb-10">

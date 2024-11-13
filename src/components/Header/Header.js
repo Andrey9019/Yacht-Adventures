@@ -25,9 +25,14 @@ const Header = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  // Функція для закриття меню
+  const closeMenu = () => setIsMenuOpen(false);
+
   return (
     <header className="container relative flex justify-between items-center py-6 px-5 md:p-8">
       <div className="flex items-center gap-2">
+        {/* Логотип і назва */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width=""
@@ -71,24 +76,25 @@ const Header = () => {
           Yacht Adventures
         </span>
       </div>
+
       {/* Навігація для десктопу */}
       {!isMobile ? (
         <nav className="hidden md:flex gap-6">
           <a
             href="#About"
-            className=" hover:text-[--prime-dark] font-bold uppercase"
+            className="hover:text-[--prime-dark] font-bold uppercase"
           >
             About
           </a>
           <a
             href="#Yachts"
-            className="hover:text-[--prime-dark] font-bold  uppercase"
+            className="hover:text-[--prime-dark] font-bold uppercase"
           >
             Yachts
           </a>
           <a
             href="#Reviews"
-            className="hover:text-[--prime-dark] font-bold  uppercase"
+            className="hover:text-[--prime-dark] font-bold uppercase"
           >
             Reviews
           </a>
@@ -102,6 +108,7 @@ const Header = () => {
           >
             {isMenuOpen ? (
               <span className="text-4xl">
+                {/* Іконка для закриття */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -112,16 +119,16 @@ const Header = () => {
                   <path
                     d="M18 6L6 18"
                     stroke="#F6F5EF"
-                    stroke-width="1.3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M6 6L18 18"
                     stroke="#F6F5EF"
-                    stroke-width="1.3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </span>
@@ -142,9 +149,9 @@ const Header = () => {
           </button>
           {/* Мобільне меню */}
           {isMenuOpen && (
-            <div className="fixed inset-0 bg-[--dark-blue] z-50 flex flex-col items-center text-center ">
+            <div className="fixed inset-0 bg-[--dark-blue] z-50 flex flex-col items-center text-center">
               {/* Верхня частина з логотипом, назвою і хрестиком */}
-              <div className="relative w-full flex justify-between items-center py-6 px-5 ">
+              <div className="relative w-full flex justify-between items-center py-6 px-5">
                 <div className="flex items-center gap-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -187,15 +194,15 @@ const Header = () => {
                       </linearGradient>
                     </defs>
                   </svg>
-                  <span className="text-sm font-medium uppercase">
+                  <span className="text-sm font-medium uppercase md:font-bold md:text-xl">
                     Yacht Adventures
                   </span>
                 </div>
-
                 <button
                   onClick={() => setIsMenuOpen(false)}
-                  className="text-3xl focus:outline-none"
+                  className="text-4xl focus:outline-none"
                 >
+                  {/* Іконка для закриття */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -206,41 +213,49 @@ const Header = () => {
                     <path
                       d="M18 6L6 18"
                       stroke="#F6F5EF"
-                      stroke-width="1.3"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.3"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M6 6L18 18"
                       stroke="#F6F5EF"
-                      stroke-width="1.3"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.3"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </button>
-                <div className="absolute bottom-0 left-4 right-4 h-[1px] bg-[#f6f5ef33]"></div>
               </div>
 
-              {/* Роздільна лінія */}
-
-              {/* Навігаційні посилання */}
-              <nav className="flex flex-col gap-[14px] mt-[25%]">
-                <a href="#About" className="text-sm font-bold uppercase">
+              {/* Навігація мобільного меню */}
+              <nav className="flex flex-col gap-6">
+                <a
+                  href="#About"
+                  onClick={closeMenu}
+                  className="text-white hover:text-[--prime-light] text-lg font-bold uppercase"
+                >
                   About
                 </a>
-                <a href="#Yachts" className="text-sm font-bold uppercase">
+                <a
+                  href="#Yachts"
+                  onClick={closeMenu}
+                  className="text-white hover:text-[--prime-light] text-lg font-bold uppercase"
+                >
                   Yachts
                 </a>
-                <a href="#Reviews" className="text-sm font-bold uppercase">
+                <a
+                  href="#Reviews"
+                  onClick={closeMenu}
+                  className="text-white hover:text-[--prime-light] text-lg font-bold uppercase"
+                >
                   Reviews
                 </a>
               </nav>
             </div>
-          )}{" "}
+          )}
         </>
       )}
-
       <div className="absolute bottom-0 left-4 right-4 h-[1px] bg-[#f6f5ef33]"></div>
     </header>
   );

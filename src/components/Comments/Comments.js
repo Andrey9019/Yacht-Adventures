@@ -2,7 +2,7 @@ import CommentsCarousel from "./CommentsCarousel";
 
 const Comments = () => {
   return (
-    <section className="flex mx-auto mb-4">
+    <section id="Reviews" className="flex mx-auto mb-4">
       <div className="container custom-container">
         <div className="mb-10">
           <p className="text-2xl mb-6">

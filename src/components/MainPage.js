@@ -1,4 +1,3 @@
-import Header from "./Header/Header";
 import Hero from "./Hero/Hero";
 import About from "./About/About";
 import ListYacht from "./ListYacht/ListYacht";
@@ -9,8 +8,7 @@ import ScrollToTopButton from "./ui/ScrollToTop";
 
 const MainPage = () => {
   return (
-    <>
-      <Header />
+    <main>
       <Hero />
       <About />
       <ListYacht />
@@ -18,7 +16,7 @@ const MainPage = () => {
       <Rent />
       <Comments />
       <ScrollToTopButton />
-    </>
+    </main>
   );
 };
 export default MainPage;

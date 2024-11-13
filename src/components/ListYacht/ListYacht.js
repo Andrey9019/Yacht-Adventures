@@ -38,7 +38,7 @@ const ListYacht = () => {
   const currentYachts = allYachts.slice(indexOfFirstYacht, indexOfLastYacht);
 
   return (
-    <section className="flex mx-auto">
+    <section id="Yachts" className="flex mx-auto">
       <div className="list-container">
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {currentYachts.map((yacht, index) => (
@@ -71,7 +71,7 @@ const ListYacht = () => {
           <button
             onClick={handleNextPage}
             disabled={currentPage === totalPages}
-            className="border border-white rounded-[60px] disabled:opacity-50"
+            className=" disabled:opacity-50"
           >
             <div className="border border-white rounded-[60px] p-[14px]">
               <svg
