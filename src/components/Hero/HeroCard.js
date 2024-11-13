@@ -5,23 +5,32 @@ const HeroCard = () => {
         <ul className="flex space-x-[-12px] mb-3">
           <li className="w-12 h-12 md:w-14 md:h-14 border-2 border-[--prime-dark] rounded-full overflow-hidden">
             <img
-              src="/images/photo-clients/img1.jpg"
+              src="/images/photo-clients/img1@1x.jpg"
+              srcSet="/images/photo-clients/img1@1x.jpg 1x, /images/photo-clients/img1@2x.webp 2x"
               alt="Client 1"
               className="w-full h-full object-cover"
+              loading="lazy" // відкладене завантаження
+              decoding="async" // асинхронне декодування
             />
           </li>
           <li className="w-12 h-12 md:w-14 md:h-14 border-2 border-[--prime-dark] rounded-full overflow-hidden">
             <img
-              src="/images/photo-clients/img4.jpg"
-              alt="Client 2"
+              src="/images/photo-clients/img2@1x.jpg"
+              srcSet="/images/photo-clients/img2@1x.jpg 1x, /images/photo-clients/img2@2x.webp 2x"
+              alt="Client 1"
               className="w-full h-full object-cover"
+              loading="lazy" // відкладене завантаження
+              decoding="async" // асинхронне декодування
             />
           </li>
           <li className="w-12 h-12 md:w-14 md:h-14 border-2 border-[--prime-dark] rounded-full overflow-hidden">
             <img
-              src="/images/photo-clients/img3.jpg"
-              alt="Client 3"
+              src="/images/photo-clients/img3@1x.jpg"
+              srcSet="/images/photo-clients/img3@1x.jpg 1x, /images/photo-clients/img3@2x.webp 2x"
+              alt="Client 1"
               className="w-full h-full object-cover"
+              loading="lazy" // відкладене завантаження
+              decoding="async" // асинхронне декодування
             />
           </li>
         </ul>

@@ -46,32 +46,33 @@ const CommentsCarousel = () => {
 
   return (
     <div className="relative">
-      <ul className="list-none p-0">
+      <ul className="flex list-none p-0">
         {currentComments.map((comment, index) => (
-          <li key={index} className="mb-4">
-            <div className="flex items-center space-x-4">
+          <li key={index} className="mb-[14px]">
+            <div className="flex flex-col p-6 items-center rounded-3xl bg-[--dark-blue-2]">
               <img
-                src={comment.imageYacht.mobileSrc}
+                src={comment.imageClient.mobileSrc}
+                srcSet={`${comment.imageClient.mobileSrc} 500w,${comment.imageClient.desktopSrc} 1000w`}
                 alt={comment.nameClient}
-                className="w-16 h-16 object-cover rounded-full"
+                className="w-12 h-12 mb-[18px] object-cover rounded-full"
               />
-              <div>
-                <p className="font-bold">{comment.nameClient}</p>
-                <p>{comment.comment}</p>
-              </div>
+
+              <p className="mb-2">{comment.nameClient}</p>
+              <p className="text-sm font-normal text-center text-[#f6f5ef80]">
+                {comment.comment}
+              </p>
             </div>
           </li>
         ))}
       </ul>
 
-      {/* Кнопки у вигляді крапок */}
-      <div className="flex justify-center mt-4 space-x-2">
+      <div className="flex justify-center gap-[10px]">
         {Array.from({ length: totalPages }).map((_, index) => (
           <button
             key={index}
             onClick={() => goToPage(index)}
             className={`w-3 h-3 rounded-full ${
-              currentPage === index ? "bg-gray-800" : "bg-gray-400"
+              currentPage === index ? "bg-gray-400" : "bg-gray-800"
             }`}
           ></button>
         ))}
