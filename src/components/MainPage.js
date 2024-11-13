@@ -5,6 +5,7 @@ import ListYacht from "./ListYacht/ListYacht";
 import Activitys from "./Activitys/Activitys";
 import Rent from "./RentForm/Rent";
 import Comments from "./Comments/Comments";
+import ScrollToTopButton from "./ui/ScrollToTop";
 
 const MainPage = () => {
   return (
@@ -16,6 +17,7 @@ const MainPage = () => {
       <Activitys />
       <Rent />
       <Comments />
+      <ScrollToTopButton />
     </>
   );
 };
