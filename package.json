@@ -1,6 +1,7 @@
 {
   "name": "yacht-adventures",
   "version": "0.1.0",
+  "homepage": "https://Andrey9019.github.io/Yacht-Adventures",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
