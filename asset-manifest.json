@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Yacht-Adventures/static/css/main.f984ba2b.css",
+    "main.js": "/Yacht-Adventures/static/js/main.a153b9ce.js",
+    "index.html": "/Yacht-Adventures/index.html",
+    "main.f984ba2b.css.map": "/Yacht-Adventures/static/css/main.f984ba2b.css.map",
+    "main.a153b9ce.js.map": "/Yacht-Adventures/static/js/main.a153b9ce.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f984ba2b.css",
+    "static/js/main.a153b9ce.js"
+  ]
+}
