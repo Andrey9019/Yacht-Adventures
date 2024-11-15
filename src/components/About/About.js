@@ -33,8 +33,8 @@ const About = () => {
             <div className="about-box1 xl:w-[533px]">
               {" "}
               <img
-                src="/images/about/about-1@1x.jpg"
-                srcSet="/images/about/about-1@1x.jpg 1x, /images/about/about-1@2x.webp 2x"
+                src="/public/images/about/about-1@1x.jpg"
+                srcSet="/public/images/about/about-1@1x.jpg 1x, /public/images/about/about-1@2x.webp 2x"
                 alt="Yacht's view"
                 className="h-[524px] md:h-[630px] xl:h-[473px] xl:w-[533px] object-cover rounded-3xl  "
                 loading="lazy" // відкладене завантаження
@@ -45,8 +45,8 @@ const About = () => {
             </div>
             <div className=" about-box2 md:w-[308px]">
               <img
-                src="/images/about/about-2@1x.jpg"
-                srcSet="/images/about/about-2@1x.jpg 1x, /images/about/about-2@2x.webp 2x"
+                src="/public/images/about/about-2@1x.jpg"
+                srcSet="/public/images/about/about-2@1x.jpg 1x, /public/images/about/about-2@2x.webp 2x"
                 alt="Yacht's view"
                 className="h-[289px] md:w-[308px] scale-x-[-1] object-cover rounded-3xl "
                 loading="lazy" // відкладене завантаження
@@ -57,8 +57,8 @@ const About = () => {
             </div>
             <div className="image-container about-box3 w-[260px] ">
               <img
-                src="/images/about/about-3@1x.jpg"
-                srcSet="/images/about/about-3@1x.jpg 1x, /images/about/about-3@2x.webp 2x"
+                src="/public/images/about/about-3@1x.jpg"
+                srcSet="/public/images/about/about-3@1x.jpg 1x, /public/images/about/about-3@2x.webp 2x"
                 alt="Yacht's view"
                 className="h-[244px] w-[260px] object-cover rounded-3xl"
                 loading="lazy" // відкладене завантаження

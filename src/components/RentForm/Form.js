@@ -143,8 +143,8 @@ const Form = () => {
             </button>
 
             <img
-              src="/images/hero-card/yachtHero@1x.png"
-              srcSet="/images/hero-card/yachtHero@1x.png 1x, /images/hero-card/yachtHero@2x.webp 2x"
+              src="/public/images/hero-card/yachtHero@1x.png"
+              srcSet="/public/images/hero-card/yachtHero@1x.png 1x, /public/images/hero-card/yachtHero@2x.webp 2x"
               alt="Yacht"
               className="mb-6"
               loading="lazy"

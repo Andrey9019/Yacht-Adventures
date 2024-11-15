@@ -2,8 +2,8 @@ const allComments = [
   // 1
   {
     imageClient: {
-      mobileSrc: "/images/photo-clients/img1@1x.jpg",
-      desktopSrc: "/images/photo-clients/img1@2x.webp",
+      mobileSrc: "/public/images/photo-clients/img1@1x.jpg",
+      desktopSrc: "/public/images/photo-clients/img1@2x.webp",
     },
     nameClient: "John Wax",
     comment:
@@ -12,8 +12,8 @@ const allComments = [
   // 2
   {
     imageClient: {
-      mobileSrc: "/images/photo-clients/img2@1x.jpg",
-      desktopSrc: "/images/photo-clients/img2@2x.webp",
+      mobileSrc: "/public/images/photo-clients/img2@1x.jpg",
+      desktopSrc: "/public/images/photo-clients/img2@2x.webp",
     },
     nameClient: "Victoria Romashenko",
     comment:
@@ -22,8 +22,8 @@ const allComments = [
   // 3
   {
     imageClient: {
-      mobileSrc: "/images/photo-clients/img3@1x.jpg",
-      desktopSrc: "/images/photo-clients/img3@2x.webp",
+      mobileSrc: "/public/images/photo-clients/img3@1x.jpg",
+      desktopSrc: "/public/images/photo-clients/img3@2x.webp",
     },
     nameClient: "Ihor Trachuk",
     comment:
