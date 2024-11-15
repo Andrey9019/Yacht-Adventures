@@ -1,8 +1,8 @@
 {
   "name": "yacht-adventures",
   "version": "0.1.0",
-  "homepage": "https://Andrey9019.github.io/Yacht-Adventures/",
   "private": true,
+  "homepage": "https://Andrey9019.github.io/Yacht-Adventures/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -21,10 +21,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint:js": "eslint src/**/*.{js,jsx}",
-    "predeploy": "npm run build",
-"deploy": "gh-pages -d build"
-  },
+    "lint:js": "eslint src/**/*.{js,jsx}"
+    },
   "eslintConfig": {
     "extends": [
       "react-app",
