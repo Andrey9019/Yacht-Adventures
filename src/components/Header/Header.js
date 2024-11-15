@@ -30,7 +30,7 @@ const Header = () => {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <header className="container relative flex justify-between items-center py-6 px-5 md:p-8">
+    <header className="container relative flex justify-between items-center py-6 px-5 md:p-[35px]">
       <div className="flex items-center gap-2">
         {/* Логотип і назва */}
         <svg
@@ -79,7 +79,7 @@ const Header = () => {
 
       {/* Навігація для десктопу */}
       {!isMobile ? (
-        <nav className="hidden md:flex gap-6">
+        <nav className="hidden md:flex text-sm gap-6">
           <a
             href="#About"
             className="hover:text-[--prime-dark] font-bold uppercase"

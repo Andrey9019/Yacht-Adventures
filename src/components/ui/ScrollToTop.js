@@ -10,9 +10,10 @@ const ScrollToTopButton = () => {
     <div className="flex container px-5 justify-end">
       <button
         onClick={scrollToTop}
-        className="w-11 h-11 p-3 rounded-lg bg-[--prime-phrase] hover:bg-[--prime-dark] transition duration-300"
+        className="flex items-center justify-center w-11 h-11 md:w-[68px] md:h-[68px] p-3 rounded-lg bg-[--prime-phrase] hover:bg-[--prime-dark] transition duration-300"
       >
         <svg
+          className=" md:w-7 md:h-7"
           xmlns="http://www.w3.org/2000/svg"
           width="20"
           height="20"

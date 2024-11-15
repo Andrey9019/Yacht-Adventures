@@ -1,6 +1,6 @@
 const HeroCard = () => {
   return (
-    <div className="hero-background p-6 pb-12 max-w-[426px]">
+    <div className="hero-background p-6 pb-12 max-w-[426px] xl:mr-[236px]">
       <div className="relative">
         <ul className="flex space-x-[-12px] mb-3">
           <li className="w-12 h-12 md:w-14 md:h-14 border-2 border-[--prime-dark] rounded-full overflow-hidden">

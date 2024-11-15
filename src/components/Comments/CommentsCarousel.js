@@ -8,7 +8,7 @@ const CommentsCarousel = () => {
   // Зміна кількості коментарів на основі розміру екрану
   useEffect(() => {
     const updateCommentsPerPage = () => {
-      if (window.innerWidth >= 1024) {
+      if (window.innerWidth >= 1216) {
         setCommentsPerPage(3); // Для десктопу
       } else if (window.innerWidth >= 768) {
         setCommentsPerPage(2); // Для планшету
@@ -46,10 +46,10 @@ const CommentsCarousel = () => {
 
   return (
     <div className="relative">
-      <ul className="flex list-none p-0">
+      <ul className="flex justify-center gap-4 list-none p-0">
         {currentComments.map((comment, index) => (
-          <li key={index} className="mb-[14px]">
-            <div className="flex flex-col p-6 items-center rounded-3xl bg-[--dark-blue-2]">
+          <li key={index} className="mb-[14px] md:mb-8 max-w-[384px]">
+            <div className="flex flex-col p-6 md:px-8 xl:p-8 items-center rounded-3xl bg-[--dark-blue-2]">
               <img
                 src={comment.imageClient.mobileSrc}
                 srcSet={`${comment.imageClient.mobileSrc} 500w,${comment.imageClient.desktopSrc} 1000w`}
@@ -66,7 +66,7 @@ const CommentsCarousel = () => {
         ))}
       </ul>
 
-      <div className="flex justify-center gap-[10px]">
+      <div className="flex justify-center gap-[10px] xl:hidden">
         {Array.from({ length: totalPages }).map((_, index) => (
           <button
             key={index}
